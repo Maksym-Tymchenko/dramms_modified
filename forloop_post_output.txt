@@ -1,0 +1,560 @@
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-gUSg9L/features/B_level1_mask.nii.gz /tmp/dramms-gUSg9L/features/A2B_affine_level1.nii.gz /tmp/dramms-gUSg9L/features/B_level1.nii.gz /tmp/dramms-gUSg9L/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case1/output/dramms/after/Case1-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case1/output/dramms/after/Case1-MRI_to_US_def.nii.gz
+
+
+Total time used: 5.08 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11.]
+img2 shape: (135, 134, 128)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11.]
+('landmark error (vox)', 7.585639012414273)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-AdZo5G/features/B_level1_mask.nii.gz /tmp/dramms-AdZo5G/features/A2B_affine_level1.nii.gz /tmp/dramms-AdZo5G/features/B_level1.nii.gz /tmp/dramms-AdZo5G/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case2/output/dramms/after/Case2-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case2/output/dramms/after/Case2-MRI_to_US_def.nii.gz
+
+
+Total time used: 4.50 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13.]
+img2 shape: (123, 126, 112)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13.]
+('landmark error (vox)', 5.400534472801575)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-U5M1rX/features/B_level1_mask.nii.gz /tmp/dramms-U5M1rX/features/A2B_affine_level1.nii.gz /tmp/dramms-U5M1rX/features/B_level1.nii.gz /tmp/dramms-U5M1rX/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case3/output/dramms/after/Case3-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case3/output/dramms/after/Case3-MRI_to_US_def.nii.gz
+
+
+Total time used: 6.76 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+img2 shape: (137, 140, 134)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+('landmark error (vox)', 15.399915172597535)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-2JvrxK/features/B_level1_mask.nii.gz /tmp/dramms-2JvrxK/features/A2B_affine_level1.nii.gz /tmp/dramms-2JvrxK/features/B_level1.nii.gz /tmp/dramms-2JvrxK/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case4/output/dramms/after/Case4-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case4/output/dramms/after/Case4-MRI_to_US_def.nii.gz
+
+
+Total time used: 6.61 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13.]
+img2 shape: (136, 124, 145)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13.]
+('landmark error (vox)', 7.3417575134689965)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-RGRP5I/features/B_level1_mask.nii.gz /tmp/dramms-RGRP5I/features/A2B_affine_level1.nii.gz /tmp/dramms-RGRP5I/features/B_level1.nii.gz /tmp/dramms-RGRP5I/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case6/output/dramms/after/Case6-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case6/output/dramms/after/Case6-MRI_to_US_def.nii.gz
+
+
+Total time used: 10.55 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [0. 1. 2. 3. 4. 5. 6. 7. 8.]
+img2 shape: (121, 192, 172)
+Unique image data 2: [0. 1. 2. 3. 4. 5. 6. 7. 8.]
+('landmark error (vox)', 6.888064008184929)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-o5chPT/features/B_level1_mask.nii.gz /tmp/dramms-o5chPT/features/A2B_affine_level1.nii.gz /tmp/dramms-o5chPT/features/B_level1.nii.gz /tmp/dramms-o5chPT/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case7/output/dramms/after/Case7-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case7/output/dramms/after/Case7-MRI_to_US_def.nii.gz
+
+
+Total time used: 11.36 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+img2 shape: (174, 175, 176)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+('landmark error (vox)', 9.460663154599553)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-9wP1Yy/features/B_level1_mask.nii.gz /tmp/dramms-9wP1Yy/features/A2B_affine_level1.nii.gz /tmp/dramms-9wP1Yy/features/B_level1.nii.gz /tmp/dramms-9wP1Yy/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case8/output/dramms/after/Case8-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case8/output/dramms/after/Case8-MRI_to_US_def.nii.gz
+
+
+Total time used: 5.66 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10.]
+img2 shape: (133, 120, 129)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10.]
+('landmark error (vox)', 4.563412879512546)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-hSJCvd/features/B_level1_mask.nii.gz /tmp/dramms-hSJCvd/features/A2B_affine_level1.nii.gz /tmp/dramms-hSJCvd/features/B_level1.nii.gz /tmp/dramms-hSJCvd/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case11/output/dramms/after/Case11-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case11/output/dramms/after/Case11-MRI_to_US_def.nii.gz
+
+
+Total time used: 7.75 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+img2 shape: (139, 146, 152)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+('landmark error (vox)', 6.066921983931335)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-HTtrYu/features/B_level1_mask.nii.gz /tmp/dramms-HTtrYu/features/A2B_affine_level1.nii.gz /tmp/dramms-HTtrYu/features/B_level1.nii.gz /tmp/dramms-HTtrYu/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case12/output/dramms/after/Case12-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case12/output/dramms/after/Case12-MRI_to_US_def.nii.gz
+
+
+Total time used: 5.65 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+img2 shape: (128, 143, 127)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+('landmark error (vox)', 38.449910945100136)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-80Z4XS/features/B_level1_mask.nii.gz /tmp/dramms-80Z4XS/features/A2B_affine_level1.nii.gz /tmp/dramms-80Z4XS/features/B_level1.nii.gz /tmp/dramms-80Z4XS/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case14/output/dramms/after/Case14-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case14/output/dramms/after/Case14-MRI_to_US_def.nii.gz
+
+
+Total time used: 7.20 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14. 15.]
+img2 shape: (137, 128, 161)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14. 15.]
+('landmark error (vox)', 8.158426241604674)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-7OW0cJ/features/B_level1_mask.nii.gz /tmp/dramms-7OW0cJ/features/A2B_affine_level1.nii.gz /tmp/dramms-7OW0cJ/features/B_level1.nii.gz /tmp/dramms-7OW0cJ/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case15/output/dramms/after/Case15-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case15/output/dramms/after/Case15-MRI_to_US_def.nii.gz
+
+
+Total time used: 7.56 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+img2 shape: (135, 152, 139)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+('landmark error (vox)', 10.31037803835152)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-I7DprX/features/B_level1_mask.nii.gz /tmp/dramms-I7DprX/features/A2B_affine_level1.nii.gz /tmp/dramms-I7DprX/features/B_level1.nii.gz /tmp/dramms-I7DprX/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case16/output/dramms/after/Case16-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case16/output/dramms/after/Case16-MRI_to_US_def.nii.gz
+
+
+Total time used: 12.53 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13.]
+img2 shape: (113, 173, 141)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13.]
+('landmark error (vox)', 9.595727264740155)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-8OxFIG/features/B_level1_mask.nii.gz /tmp/dramms-8OxFIG/features/A2B_affine_level1.nii.gz /tmp/dramms-8OxFIG/features/B_level1.nii.gz /tmp/dramms-8OxFIG/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case17/output/dramms/after/Case17-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case17/output/dramms/after/Case17-MRI_to_US_def.nii.gz
+
+
+Total time used: 8.45 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14. 15.]
+img2 shape: (112, 149, 146)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14. 15.]
+('landmark error (vox)', 14.90419762340699)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-825ZHD/features/B_level1_mask.nii.gz /tmp/dramms-825ZHD/features/A2B_affine_level1.nii.gz /tmp/dramms-825ZHD/features/B_level1.nii.gz /tmp/dramms-825ZHD/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case18/output/dramms/after/Case18-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case18/output/dramms/after/Case18-MRI_to_US_def.nii.gz
+
+
+Total time used: 6.91 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13.]
+img2 shape: (146, 140, 118)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13.]
+('landmark error (vox)', 17.93700760909522)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-SK6lNj/features/B_level1_mask.nii.gz /tmp/dramms-SK6lNj/features/A2B_affine_level1.nii.gz /tmp/dramms-SK6lNj/features/B_level1.nii.gz /tmp/dramms-SK6lNj/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case19/output/dramms/after/Case19-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case19/output/dramms/after/Case19-MRI_to_US_def.nii.gz
+
+
+Total time used: 6.91 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+img2 shape: (159, 153, 129)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+('landmark error (vox)', 5.405707367430054)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-aRmTnf/features/B_level1_mask.nii.gz /tmp/dramms-aRmTnf/features/A2B_affine_level1.nii.gz /tmp/dramms-aRmTnf/features/B_level1.nii.gz /tmp/dramms-aRmTnf/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case21/output/dramms/after/Case21-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case21/output/dramms/after/Case21-MRI_to_US_def.nii.gz
+
+
+Total time used: 18.41 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+img2 shape: (205, 175, 177)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+('landmark error (vox)', 12.254903027832617)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-Kn3b4U/features/B_level1_mask.nii.gz /tmp/dramms-Kn3b4U/features/A2B_affine_level1.nii.gz /tmp/dramms-Kn3b4U/features/B_level1.nii.gz /tmp/dramms-Kn3b4U/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case23/output/dramms/after/Case23-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case23/output/dramms/after/Case23-MRI_to_US_def.nii.gz
+
+
+Total time used: 8.01 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+img2 shape: (148, 168, 119)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+('landmark error (vox)', 15.711657729670094)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-ttNPMh/features/B_level1_mask.nii.gz /tmp/dramms-ttNPMh/features/A2B_affine_level1.nii.gz /tmp/dramms-ttNPMh/features/B_level1.nii.gz /tmp/dramms-ttNPMh/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case24/output/dramms/after/Case24-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case24/output/dramms/after/Case24-MRI_to_US_def.nii.gz
+
+
+Total time used: 7.70 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+img2 shape: (111, 137, 113)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+('landmark error (vox)', 5.01547966983133)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-EEyBU5/features/B_level1_mask.nii.gz /tmp/dramms-EEyBU5/features/A2B_affine_level1.nii.gz /tmp/dramms-EEyBU5/features/B_level1.nii.gz /tmp/dramms-EEyBU5/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case25/output/dramms/after/Case25-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case25/output/dramms/after/Case25-MRI_to_US_def.nii.gz
+
+
+Total time used: 8.66 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11.]
+img2 shape: (143, 149, 158)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11.]
+('landmark error (vox)', 30.680649080119462)
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Skip affine registration per the user's request (because -a option is set 0). The two input images are assumed to be already affinely aligned.
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.35555555555555555554 -e0 -F0 -S1 -u2 -a/tmp/dramms-nb7Wnm/features/B_level1_mask.nii.gz /tmp/dramms-nb7Wnm/features/A2B_affine_level1.nii.gz /tmp/dramms-nb7Wnm/features/B_level1.nii.gz /tmp/dramms-nb7Wnm/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+Step 7:   Skip the combination of affine and deformable transformations as no affine registration was performed.
+Step 8:   Warp the input image and write output files...
+
+The registered image has been saved to file bucket/RESECT/RESECT/NIFTI/Case27/output/dramms/after/Case27-MRI_to_US_deformed_result.nii.gz, deformation to file bucket/RESECT/RESECT/NIFTI/Case27/output/dramms/after/Case27-MRI_to_US_def.nii.gz
+
+
+Total time used: 5.43 minutes.
+
+
+Post-step: Warp another image using obtained deformation...
+Unique image data: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13.]
+img2 shape: (124, 137, 124)
+Unique image data 2: [ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13.]
+('landmark error (vox)', 12.74625365166754)

@@ -1,0 +1,581 @@
+What manual page do you want?
+For example, try 'man man'.
+Killed
+Starting linear reg. of Case4-US.nii.gz and Case4-MRI_in_US.nii.gz
+=============================================================
+Searching only for rigid (6 parameter) transform
+TMdDSTMdDS
+# points used: 84624/169248, quantile: 0.409905
+t: MIND=7.08, data=5.75, affine=1.03, speed=4.05e+07 dof/s
+TMdDSTMdDS
+# points used: 142442/284886, quantile: 0.422730
+t: MIND=6.71, data=3.03, affine=0.95, speed=6.18e+07 dof/s
+TMdDSTMdDS
+# points used: 252402/504804, quantile: 0.434936
+t: MIND=3.37, data=1.95, affine=0.85, speed=7.09e+07 dof/s
+TMdDSTMdDS
+# points used: 508950/1017900, quantile: 0.447531
+t: MIND=6.70, data=1.90, affine=0.76, speed=5.35e+07 dof/s
++1.000 | +0.003 | -0.025 | +0.000 
+-0.003 | +1.000 | -0.015 | +0.000 
++0.025 | +0.015 | +1.000 | +0.000 
+-4.519 | -8.577 | -6.073 | +1.000 
+Finished. Total time: 45.0754 sec. (40.0789 sec. for MIND+data+affine+trans)
+Transforming Case4-MRI-landmarks.nii.gz into Case4-MRI-landmarks_rotated.nii.gz
+Reading affine matrix file: affine_matrix.txt
++1.000 | +0.003 | -0.025 | +0.000 
+-0.003 | +1.000 | -0.015 | +0.000 
++0.025 | +0.015 | +1.000 | +0.000 
+-4.519 | -8.577 | -6.073 | +1.000 
+Reading displacements from:
+/vol/bitbucket/mt3215/RESECT/RESECT/NIFTI/Case4/output/dramms/zero_displacements.dat
+=============================================================
+grid step 4
+Transforming Case4-MRI_in_US.nii.gz into Case4-MRI_in_US_rigid.nii.gz
+Reading affine matrix file: affine_matrix.txt
++1.000 | +0.003 | -0.025 | +0.000 
+-0.003 | +1.000 | -0.015 | +0.000 
++0.025 | +0.015 | +1.000 | +0.000 
+-4.519 | -8.577 | -6.073 | +1.000 
+Reading displacements from:
+/vol/bitbucket/mt3215/RESECT/RESECT/NIFTI/Case4/output/dramms/zero_displacements.dat
+=============================================================
+grid step 4
+-------------------------------------------------------------------------------------------
+DRAMMS: Deformable image Registration via Attribute Matching and Mutual-Saliency weighting
+-------------------------------------------------------------------------------------------
+
+Step 1:   Convert images to byte datatype...
+Step 2:   Match histograms if necessary...
+Step 3:   Affine registration of images by FSL's flirt tool (may take several minutes)...
+Terminated
+
+----------
+[0;31mError:
+Computation of Deformation failed. This is usually casued by the lack of sufficient memory.
+
+To estimate how much memory your images may require: http://www.cbica.upenn.edu/sbia/software/dramms/download.html#system-requirements
+
+In general, please re-run with 12GB (in rare cases 14GB) memory available.
+
+If your machine does not have that much memory, you can still run dramms using much less memory (at the cost of slighlty reduced accuracy): http://www.cbica.upenn.edu/sbia/software/dramms/faq.html#q4 [0m{}
+
+----------
+
+Failed to read image from file A_byte.nii.gz
+/vol/bitbucket/mt3215/Dramms/bin/../lib/dramms/bash/basis/utilities.sh: line 589: 1546360 Segmentation fault      "${_basis_execute_exec}" "$@"
+Command /vol/bitbucket/mt3215/Dramms/bin/dramms-warp A_byte.nii.gz *.mat *.nii.gz -t B_byte.nii.gz failed
+Terminated
+Command /vol/bitbucket/mt3215/Dramms/lib/dramms/Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.15000000000000000000 -e0 -F0 -S1 -u2 -a/tmp/dramms-aYXs19/features/B_level1_mask.nii.gz /tmp/dramms-aYXs19/features/A2B_affine_level1.nii.gz /tmp/dramms-aYXs19/features/B_level1.nii.gz /tmp/dramms-aYXs19/features/GaborUsed_ A2B.nii.gz DField.nii.gz failed
+
+----------
+[0;31mError:
+Computation of Deformation failed. This is usually casued by the lack of sufficient memory.
+
+To estimate how much memory your images may require: http://www.cbica.upenn.edu/sbia/software/dramms/download.html#system-requirements
+
+In general, please re-run with 12GB (in rare cases 14GB) memory available.
+
+If your machine does not have that much memory, you can still run dramms using much less memory (at the cost of slighlty reduced accuracy): http://www.cbica.upenn.edu/sbia/software/dramms/faq.html#q4 [0m{}
+
+----------
+
+
+----------
+[0;31mError:
+Computation of Deformation failed. This is usually casued by the lack of sufficient memory.
+
+To estimate how much memory your images may require: http://www.cbica.upenn.edu/sbia/software/dramms/download.html#system-requirements
+
+In general, please re-run with 12GB (in rare cases 14GB) memory available.
+
+If your machine does not have that much memory, you can still run dramms using much less memory (at the cost of slighlty reduced accuracy): http://www.cbica.upenn.edu/sbia/software/dramms/faq.html#q4 [0m{}
+
+----------
+
+Command /vol/bitbucket/mt3215/Dramms/lib/dramms/Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.15000000000000000000 -e0 -F0 -S1 -u2 -a/tmp/dramms-o0258n/features/B_level1_mask.nii.gz /tmp/dramms-o0258n/features/A2B_affine_level1.nii.gz /tmp/dramms-o0258n/features/B_level1.nii.gz /tmp/dramms-o0258n/features/GaborUsed_ A2B.nii.gz DField.nii.gz failed
+
+----------
+[0;31mError:
+Computation of Deformation failed. This is usually casued by the lack of sufficient memory.
+
+To estimate how much memory your images may require: http://www.cbica.upenn.edu/sbia/software/dramms/download.html#system-requirements
+
+In general, please re-run with 12GB (in rare cases 14GB) memory available.
+
+If your machine does not have that much memory, you can still run dramms using much less memory (at the cost of slighlty reduced accuracy): http://www.cbica.upenn.edu/sbia/software/dramms/faq.html#q4 [0m{}
+
+----------
+
+Step 4:   Skip preprocessing of the initial transformation as none was specified.
+Step 5a:  Generate multi-resolution images for the extraction of Gabor attributes...
+Step 5b:  Extract Gabor attributes for deformable registration...
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+Traceback (most recent call last):
+  File "./landmarks_centre_mass.py", line 78, in <module>
+    main()
+  File "./landmarks_centre_mass.py", line 57, in main
+    xc = np.sum(label*xv)/np.sum(label)
+ValueError: operands could not be broadcast together with shapes (243,275,279) (324,367,372) 
+rm: cannot remove 'bucket/BITE_group2/01/output/deeds/Case01-results*': No such file or directory
+Step 6:   Deformably register images via attribute matching and mutual-saliency weighting (be patient, may take tens of minutes)...
+
+Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.15000000000000000000 -e0 -F0 -S1 -u2 -a/tmp/dramms-ONgt8d/features/B_level1_mask.nii.gz /tmp/dramms-ONgt8d/features/A2B_affine_level1.nii.gz /tmp/dramms-ONgt8d/features/B_level1.nii.gz /tmp/dramms-ONgt8d/features/GaborUsed_ A2B.nii.gz DField.nii.gz
+
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+Traceback (most recent call last):
+  File "./landmarks_centre_mass.py", line 78, in <module>
+    main()
+  File "./landmarks_centre_mass.py", line 57, in main
+    xc = np.sum(label*xv)/np.sum(label)
+ValueError: operands could not be broadcast together with shapes (252,227,199) (378,341,299) 
+rm: cannot remove 'bucket/RESECT/RESECT/NIFTI/Case1/output/dramms/Case1-results*': No such file or directory
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:57: RuntimeWarning: invalid value encountered in double_scalars
+  xc = np.sum(label*xv)/np.sum(label)
+./landmarks_centre_mass.py:58: RuntimeWarning: invalid value encountered in double_scalars
+  yc = np.sum(label*yv)/np.sum(label)
+./landmarks_centre_mass.py:59: RuntimeWarning: invalid value encountered in double_scalars
+  zc = np.sum(label*zv)/np.sum(label)
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:57: RuntimeWarning: invalid value encountered in double_scalars
+  xc = np.sum(label*xv)/np.sum(label)
+./landmarks_centre_mass.py:58: RuntimeWarning: invalid value encountered in double_scalars
+  yc = np.sum(label*yv)/np.sum(label)
+./landmarks_centre_mass.py:59: RuntimeWarning: invalid value encountered in double_scalars
+  zc = np.sum(label*zv)/np.sum(label)
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+rm: cannot remove 'bucket/BITE_group2/05/output/deeds/Case05_lm*': No such file or directory
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+rm: cannot remove 'bucket/BITE_group2/06/output/deeds/Case06_lm*': No such file or directory
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+rm: cannot remove 'bucket/BITE_group2/07/output/deeds/Case07_lm*': No such file or directory
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:57: RuntimeWarning: invalid value encountered in double_scalars
+  xc = np.sum(label*xv)/np.sum(label)
+./landmarks_centre_mass.py:58: RuntimeWarning: invalid value encountered in double_scalars
+  yc = np.sum(label*yv)/np.sum(label)
+./landmarks_centre_mass.py:59: RuntimeWarning: invalid value encountered in double_scalars
+  zc = np.sum(label*zv)/np.sum(label)
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:57: RuntimeWarning: invalid value encountered in double_scalars
+  xc = np.sum(label*xv)/np.sum(label)
+./landmarks_centre_mass.py:58: RuntimeWarning: invalid value encountered in double_scalars
+  yc = np.sum(label*yv)/np.sum(label)
+./landmarks_centre_mass.py:59: RuntimeWarning: invalid value encountered in double_scalars
+  zc = np.sum(label*zv)/np.sum(label)
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:57: RuntimeWarning: invalid value encountered in double_scalars
+  xc = np.sum(label*xv)/np.sum(label)
+./landmarks_centre_mass.py:58: RuntimeWarning: invalid value encountered in double_scalars
+  yc = np.sum(label*yv)/np.sum(label)
+./landmarks_centre_mass.py:59: RuntimeWarning: invalid value encountered in double_scalars
+  zc = np.sum(label*zv)/np.sum(label)
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:57: RuntimeWarning: invalid value encountered in double_scalars
+  xc = np.sum(label*xv)/np.sum(label)
+./landmarks_centre_mass.py:58: RuntimeWarning: invalid value encountered in double_scalars
+  yc = np.sum(label*yv)/np.sum(label)
+./landmarks_centre_mass.py:59: RuntimeWarning: invalid value encountered in double_scalars
+  zc = np.sum(label*zv)/np.sum(label)
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:57: RuntimeWarning: invalid value encountered in double_scalars
+  xc = np.sum(label*xv)/np.sum(label)
+./landmarks_centre_mass.py:58: RuntimeWarning: invalid value encountered in double_scalars
+  yc = np.sum(label*yv)/np.sum(label)
+./landmarks_centre_mass.py:59: RuntimeWarning: invalid value encountered in double_scalars
+  zc = np.sum(label*zv)/np.sum(label)
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:57: RuntimeWarning: invalid value encountered in double_scalars
+  xc = np.sum(label*xv)/np.sum(label)
+./landmarks_centre_mass.py:58: RuntimeWarning: invalid value encountered in double_scalars
+  yc = np.sum(label*yv)/np.sum(label)
+./landmarks_centre_mass.py:59: RuntimeWarning: invalid value encountered in double_scalars
+  zc = np.sum(label*zv)/np.sum(label)
+/vol/bitbucket/mt3215/Dramms/bin/../lib/dramms/bash/basis/utilities.sh: line 589: 697427 Segmentation fault      "${_basis_execute_exec}" "$@"
+Command /vol/bitbucket/mt3215/Dramms/lib/dramms/Deform3D -b0,0,0 -p -r3 -C0 -n5 -k10 -s0.50 -m1 -f0 -M2 -w1 -g.15000000000000000000 -e0 -F0 -S1 -u2 -a/tmp/dramms-210h57/features/B_level1_mask.nii.gz /tmp/dramms-210h57/features/A2B_affine_level1.nii.gz /tmp/dramms-210h57/features/B_level1.nii.gz /tmp/dramms-210h57/features/GaborUsed_ A2B.nii.gz DField.nii.gz failed
+
+----------
+[0;31mError:
+Computation of Deformation failed. This is usually casued by the lack of sufficient memory.
+
+To estimate how much memory your images may require: http://www.cbica.upenn.edu/sbia/software/dramms/download.html#system-requirements
+
+In general, please re-run with 12GB (in rare cases 14GB) memory available.
+
+If your machine does not have that much memory, you can still run dramms using much less memory (at the cost of slighlty reduced accuracy): http://www.cbica.upenn.edu/sbia/software/dramms/faq.html#q4 [0m{}
+
+----------
+
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+Traceback (most recent call last):
+  File "./landmarks_centre_mass.py", line 78, in <module>
+    main()
+  File "./landmarks_centre_mass.py", line 57, in main
+    xc = np.sum(label*xv)/np.sum(label)
+ValueError: operands could not be broadcast together with shapes (215,251,191) (538,628,478) 
+rm: cannot remove 'bucket/RESECT/RESECT/NIFTI/Case21/output/dramms/Case21-results*': No such file or directory
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:57: RuntimeWarning: invalid value encountered in double_scalars
+  xc = np.sum(label*xv)/np.sum(label)
+./landmarks_centre_mass.py:58: RuntimeWarning: invalid value encountered in double_scalars
+  yc = np.sum(label*yv)/np.sum(label)
+./landmarks_centre_mass.py:59: RuntimeWarning: invalid value encountered in double_scalars
+  zc = np.sum(label*zv)/np.sum(label)
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:57: RuntimeWarning: invalid value encountered in double_scalars
+  xc = np.sum(label*xv)/np.sum(label)
+./landmarks_centre_mass.py:58: RuntimeWarning: invalid value encountered in double_scalars
+  yc = np.sum(label*yv)/np.sum(label)
+./landmarks_centre_mass.py:59: RuntimeWarning: invalid value encountered in double_scalars
+  zc = np.sum(label*zv)/np.sum(label)
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
+./landmarks_centre_mass.py:57: RuntimeWarning: invalid value encountered in double_scalars
+  xc = np.sum(label*xv)/np.sum(label)
+./landmarks_centre_mass.py:58: RuntimeWarning: invalid value encountered in double_scalars
+  yc = np.sum(label*yv)/np.sum(label)
+./landmarks_centre_mass.py:59: RuntimeWarning: invalid value encountered in double_scalars
+  zc = np.sum(label*zv)/np.sum(label)
+./landmarks_centre_mass.py:16: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data = img.get_data()
+./landmarks_centre_mass.py:41: DeprecationWarning: get_data() is deprecated in favor of get_fdata(), which has a more predictable return type. To obtain get_data() behavior going forward, use numpy.asanyarray(img.dataobj).
+
+* deprecated from version: 3.0
+* Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 5.0
+  img_data2 = img2.get_data()
